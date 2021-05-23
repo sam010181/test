@@ -1,7 +1,7 @@
-const { flowermodel, Usermodel } = require('./models');
+const { Flower, User } = require('./models');
 
 exports.getRecipe = (request, response) => {
-    flowermodel.find({}, (error, flower) => {
+    Flower.find({}, (error, flower) => {
 	if(error){
         return response.status(400).send({
             message: 'Error'
