@@ -9,9 +9,9 @@ const UserSchema = new mongoose.Schema({
     password: String
 });
 
-const Flowermodel = mongoose.model('FlowerName', FlowerSchema, 'FlowerName');
-const Usermodel = mongoose.model('User', UserSchema,'User');
+const Flower = mongoose.model('FlowerName', FlowerSchema, 'FlowerName');
+const User = mongoose.model('User', UserSchema,'User');
 
-module.exports = { Flowermodel, Usermodel };
+module.exports = { Flower, User };
 
 
